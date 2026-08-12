@@ -457,7 +457,7 @@ transition={{
           <div className="relative overflow-hidden bg-surface">
 
             <Image
-              src="/about/bishoy.jpg"
+              src="/about/bishoy.webp"
               alt="Bishoy Efraim"
               width={1200}
               height={1600}
