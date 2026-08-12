@@ -60,7 +60,7 @@ useEffect(() => {
           className="flex items-center"
         >
           <Image
-            src="/logo.png"
+            src="/logo.webp"
             alt="PhotoBosh"
             width={180}
             height={50}
