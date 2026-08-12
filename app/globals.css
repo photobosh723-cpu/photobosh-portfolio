@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #d4af37;
+  --color-darkBg: #050505;
+  --color-surface: #0d0d11;
+
+  --font-display: var(--font-syne);
+  --font-editorial: var(--font-playfair);
+  --font-body: var(--font-jakarta);
+}
+
+@layer base {
+  html {
+    background: #050505;
+  }
+
+  body {
+    background: #050505;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  ::selection {
+    background: #d4af37;
+    color: black;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
