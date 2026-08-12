@@ -59,14 +59,13 @@ useEffect(() => {
           href="/"
           className="flex items-center"
         >
-          <Image
-            src="/logo.webp"
-            alt="PhotoBosh"
-            width={180}
-            height={50}
-            priority
-            className="h-8 w-auto object-contain md:h-10"
-          />
+          <img
+  src="/logo.webp"
+  alt="PhotoBosh"
+  width={180}
+  height={50}
+  className="block h-10 w-auto object-contain md:h-12"
+/>
         </a>
 
         <div className="hidden items-center gap-10 md:flex">
@@ -112,13 +111,13 @@ useEffect(() => {
               onClick={() => setMenuOpen(false)}
               className="flex items-center"
             >
-              <Image
-                src="/logo.webp"
-                alt="PhotoBosh"
-                width={180}
-                height={50}
-                className="h-8 w-auto object-contain"
-              />
+              <img
+  src="/logo.webp"
+  alt="PhotoBosh"
+  width={180}
+  height={50}
+  className="block h-10 w-auto object-contain"
+/>
             </a>
 
             <button
