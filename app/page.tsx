@@ -53,20 +53,7 @@ useEffect(() => {
     <main className="min-h-screen bg-darkBg text-white">
 
       {/* NAVBAR */}
-      <nav className="absolute left-0 top-0 z-50 flex w-full items-center justify-between px-6 py-6 md:px-10 md:py-8">
-
-        <a
-          href="/"
-          className="flex items-center"
-        >
-          <img
-  src="/logo.png"
-  alt="PhotoBosh"
-  width={180}
-  height={50}
-  className="block h-10 w-auto object-contain md:h-12"
-/>
-        </a>
+      <nav className="absolute left-0 top-0 z-50 flex w-full items-center justify-end px-6 py-6 md:px-10 md:py-8">
 
         <div className="hidden items-center gap-10 md:flex">
           <a
@@ -104,21 +91,7 @@ useEffect(() => {
       {menuOpen && (
         <div className="fixed inset-0 z-[100] bg-darkBg md:hidden">
 
-          <div className="flex items-center justify-between px-6 py-6">
-
-            <a
-              href="/"
-              onClick={() => setMenuOpen(false)}
-              className="flex items-center"
-            >
-              <img
-  src="/logo.png"
-  alt="PhotoBosh"
-  width={180}
-  height={50}
-  className="block h-10 w-auto object-contain"
-/>
-            </a>
+          <div className="flex items-center justify-end px-6 py-6">
 
             <button
               type="button"
