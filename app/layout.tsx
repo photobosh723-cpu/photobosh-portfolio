@@ -27,7 +27,7 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "PhotoBosh — Bishoy Ephraiem | Cinematographer & Visual Director",
   description:
-    "Portfolio of Bishoy Ephraiem , a creative Videographer and Graphic Designer.",
+    "Portfolio of Bishoy Ephraiem , a creative Cinematographer and Photographer",
 };
 
 export default function RootLayout({
