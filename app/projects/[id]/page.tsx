@@ -143,9 +143,10 @@ const item = {
   >
    {video.src.includes("play.gumlet.io/embed/") ? (
   <GumletVideo
-    src={video.src}
-    title={video.alt}
-  />
+  src={video.src}
+  title={video.alt}
+  vertical={project.category === "Reels"}
+/>
 ) : (
   <LazyVideo
     src={video.src}

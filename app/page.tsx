@@ -226,7 +226,7 @@ useEffect(() => {
             }}
             className="mx-auto mt-8 max-w-xl font-sans text-sm leading-7 text-white/60 md:text-base"
           >
-            Bishoy Efraim — Cinematographer & Photographer.
+            Bishoy Ephraiem — Cinematographer & Photographer.
           </motion.p>
 
         </div>
@@ -451,12 +451,12 @@ transition={{
               <br />
 
               <span className="font-serif text-xl font-normal italic text-white/60 md:text-6xl">
-                Efraim
+                Ephraiem
               </span>
             </h2>
 
             <p className="mt-4 font-sans text-[10px] leading-5 text-white/60 md:mt-8 md:max-w-xl md:text-base md:leading-8">
-              I’m Bishoy Efraim, a cinematographer and Photographer focused on
+              I’m Bishoy Ephraiem, a cinematographer and Photographer focused on
               creating cinematic visual stories through camera, movement, light,
               and atmosphere.
             </p>
@@ -559,7 +559,7 @@ transition={{
               </p>
 
               <p className="mt-5 font-syne text-lg text-white transition-colors group-hover:text-gold">
-                Beshoephraim
+                Beshoephraiem
               </p>
 
             </a>

@@ -5,16 +5,25 @@ import { useState } from "react";
 type GumletVideoProps = {
   src: string;
   title: string;
+  vertical?: boolean;
 };
 
 export default function GumletVideo({
   src,
   title,
+  vertical = false,
 }: GumletVideoProps) {
   const [active, setActive] = useState(false);
 
   return (
-    <div className="relative aspect-video w-full overflow-hidden bg-black">
+    <div
+      className={[
+        "relative w-full overflow-hidden bg-black",
+        vertical
+          ? "aspect-[9/16] md:mx-auto md:max-w-[420px]"
+          : "aspect-video",
+      ].join(" ")}
+    >
       <iframe
         src={src}
         title={title}
@@ -22,9 +31,13 @@ export default function GumletVideo({
         allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write"
         allowFullScreen
         referrerPolicy="origin"
-        className={`absolute inset-0 h-full w-full border-0 ${
+        className={`absolute inset-0 block h-full w-full border-0 ${
           active ? "pointer-events-auto" : "pointer-events-none"
         }`}
+        style={{
+          margin: 0,
+          padding: 0,
+        }}
       />
 
       {!active && (
