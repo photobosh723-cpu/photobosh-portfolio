@@ -1,5 +1,6 @@
 "use client";
 
+import HomeScrollRestore from "../components/HomeScrollRestore";
 import { motion } from "framer-motion";
 import { useState, useEffect, Suspense } from "react";
 import Image from "next/image";
@@ -51,6 +52,7 @@ useEffect(() => {
 
   return (
     <main className="min-h-screen bg-darkBg text-white">
+<HomeScrollRestore />
 
       {/* NAVBAR */}
       <nav className="absolute left-0 top-0 z-50 flex w-full items-center justify-end px-6 py-6 md:px-10 md:py-8">
