@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState, useEffect, Suspense, useRef } from "react";
+import { useState, useEffect, Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -17,30 +17,8 @@ function HomeContent() {
   const [activeCategory, setActiveCategory] =
     useState<ProjectCategory>("Photography");
 
-    const hasRestoredScroll = useRef(false);
-
     useEffect(() => {
   const category = searchParams.get("category");
-
-  useEffect(() => {
-  if (hasRestoredScroll.current) return;
-
-  const savedScroll = sessionStorage.getItem("home-scroll-y");
-
-  if (!savedScroll) return;
-
-  const scrollY = Number(savedScroll);
-
-  hasRestoredScroll.current = true;
-
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      window.scrollTo(0, scrollY);
-
-      sessionStorage.removeItem("home-scroll-y");
-    });
-  });
-}, []);
 
   if (
     category === "Photography" ||
@@ -352,15 +330,9 @@ useEffect(() => {
               {filteredProjects.map((project, index) => (
 
                 <Link
-  key={project.id}
-  href={`/projects/${project.id}`}
-  onClick={() => {
-    sessionStorage.setItem(
-      "home-scroll-y",
-      String(window.scrollY)
-    );
-  }}
->
+                  key={project.id}
+                  href={`/projects/${project.id}`}
+                >
 
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
