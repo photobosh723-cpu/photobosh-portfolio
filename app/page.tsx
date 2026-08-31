@@ -193,7 +193,7 @@ useEffect(() => {
       lg:text-[8vw]
     "
   >
-    Photo
+    BeRoll
   </h1>
 
   <h1
@@ -210,7 +210,7 @@ useEffect(() => {
       lg:text-[8vw]
     "
   >
-    Bosh
+    Studio
   </h1>
 
   <div className="mx-auto mt-6 h-px w-16 bg-gold/50 md:mt-8 md:w-24" />
