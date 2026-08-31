@@ -530,7 +530,7 @@ transition={{
 
             {/* INSTAGRAM */}
             <a
-              href="https://www.instagram.com/photo_bosh/"
+              href="https://www.instagram.com/be_roll.studio/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-darkBg p-8 transition-colors hover:bg-surface"
@@ -541,7 +541,7 @@ transition={{
               </p>
 
               <p className="mt-5 font-syne text-lg text-white transition-colors group-hover:text-gold">
-                @photo_bosh
+                @be_roll.studio
               </p>
 
             </a>

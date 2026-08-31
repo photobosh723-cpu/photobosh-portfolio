@@ -27,23 +27,25 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://photobosh-portfolio.vercel.app"),
 
-  title: "PhotoBosh — Bishoy Ephraiem | Cinematographer & Visual Director",
+  title: "BeRoll Studio — Bishoy Ephraiem | Cinematographer & Visual Director",
 
   description:
     "Portfolio of Bishoy Ephraiem, a creative Cinematographer and Photographer.",
 
   openGraph: {
-    title: "PhotoBosh — Bishoy Ephraiem | Cinematographer & Visual Director",
+    title:
+      "BeRoll Studio — Bishoy Ephraiem | Cinematographer & Visual Director",
     description:
       "Portfolio of Bishoy Ephraiem, a creative Cinematographer and Photographer.",
     url: "https://photobosh-portfolio.vercel.app",
-    siteName: "PhotoBosh",
+    siteName: "BeRoll Studio",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "PhotoBosh — Bishoy Ephraiem | Cinematographer & Visual Director",
+    title:
+      "BeRoll Studio — Bishoy Ephraiem | Cinematographer & Visual Director",
     description:
       "Portfolio of Bishoy Ephraiem, a creative Cinematographer and Photographer.",
   },
